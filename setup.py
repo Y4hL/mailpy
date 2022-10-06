@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """ Setup file for mailpy package """
-import os
 from setuptools import setup
 
 
@@ -11,19 +10,10 @@ DESCRIPTION = 'Python IMAP and SMTP Wrapper'
 URL = 'http://github.com/Y4hL/mailpy'
 AUTHOR = 'https://github.com/Y4hL'
 REQUIRES_PYTHON = '>=3.5.0'
-VERSION = '1.0.0'
-
-
-PATH = os.path.dirname(os.path.abspath(__file__))
-
-def read(filename):
-    """ This function is reads in the file with the file path """
-    filepath = os.path.join(PATH, filename)
-    with open(filepath, encoding='utf-8') as file:
-        return file.read()
+VERSION = '1.0.1'
 
 # Required Packages
-REQUIRED = read('requirements.txt').splitlines()
+REQUIRED = []
 
 # Optional Packages
 EXTRAS = {
@@ -39,8 +29,6 @@ setup(
     name=NAME,
     packages=PACKAGES,
     description=DESCRIPTION,
-    long_description=read('README.md'),
-    long_description_content_type='text/markdown',
     install_requires=REQUIRED,
     licence="GNU GPLv3",
     version=VERSION,
