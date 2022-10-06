@@ -11,7 +11,7 @@ DESCRIPTION = 'Python IMAP and SMTP Wrapper'
 URL = 'http://github.com/Y4hL/mailpy'
 AUTHOR = 'https://github.com/Y4hL'
 REQUIRES_PYTHON = '>=3.5.0'
-VERSION = '0.0.1'
+VERSION = '1.0.0'
 
 
 PATH = os.path.dirname(os.path.abspath(__file__))
